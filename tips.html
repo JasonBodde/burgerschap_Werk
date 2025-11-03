@@ -1,47 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/stylesheet.css" />
-    <title>Tips en ondersteuning</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Praktische tips en ondersteuning: werk-privébalans, omgaan met stress en netwerkadvies (incl. LinkedIn)." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="assets/stylesheet.css" />
+  <title>Tips en ondersteuning</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Werk & Burgerschap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="werkZoeken.html">Werk Zoeken</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeids Rechten en plichten</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="tips.html">Tips en ondersteuning</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="werkZoeken.html">Werk Zoeken</a></li>
+          <li class="nav-item"><a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeidsrechten & plichten</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="tips.html">Tips & ondersteuning</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="hero shadow-sm">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+        <div>
+          <h1 class="h4 mb-1">Tips en ondersteuning</h1>
+          <p class="mb-1 text-muted small">Praktische adviezen voor een betere werk-privébalans, omgaan met stress en slim netwerken.</p>
         </div>
-    </nav>
+
+        <div class="text-muted small d-none d-md-block text-end">
+          <div><strong>Kort & praktisch</strong></div>
+          <div>Direct toepasbare tips, links naar hulpinstanties en voorbeelden voor LinkedIn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-8">
+        <article id="werk-privé" class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-house-heart-fill"></i></span>
+            <h2 class="h6 mb-0">Werk-privébalans</h2>
+          </div>
+          <ul>
+            <li>Stel vaste werktijden en pauzes in en communiceer die met je leidinggevende en collega's.</li>
+            <li>Gebruik een takenlijst (dag/ week) en prioriteer met de 3 belangrijkste taken per dag.</li>
+            <li>Leer 'nee' zeggen: beperk extra taken wanneer je werkdruk te hoog is.</li>
+            <li>Plan vaste ontspanningsmomenten (wandeling, hobby, sociale contacten).</li>
+            <li>Minimaliseer schermgebruik buiten werktijd: zet meldingen uit of gebruik 'focus'-instellingen.</li>
+          </ul>
+          <p class="small-muted mb-0">Tip: bespreek structurele overload vroegtijdig met je leidinggevende — vaak zijn er oplossingen zoals herverdeling of tempo-aanpassing.</p>
+        </article>
+
+        <article id="stress" class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+            <h2 class="h6 mb-0">Omgaan met stress en werkdruk</h2>
+          </div>
+          <ul>
+            <li>Herken signalen: slaapproblemen, prikkelbaarheid, concentratieverlies. Reageer vroeg.</li>
+            <li>Adem- en korte ontspanningsoefeningen: 4-4-4 ademhaling of 5 minuten mindfulness tijdens pauze.</li>
+            <li>Delegeer wanneer mogelijk en vraag om heldere doelen en prioriteiten.</li>
+            <li>Maak gebruik van beschikbare ondersteuning: bedrijfsarts, vertrouwenspersoon of HR.</li>
+            <li>Zoek professionele hulp bij aanhoudende klachten (huisarts, bedrijfsarts, GGZ).</li>
+          </ul>
+          <p class="small-muted mb-0">Noodlijn en hulp: bel bij acute mentale nood je huisarts of de lokale crisisdienst; voor algemene informatie kijk naar de GGD of MIND.</p>
+        </article>
+
+        <article id="netwerk" class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-link-45deg"></i></span>
+            <h2 class="h6 mb-0">Netwerktips (LinkedIn & meer)</h2>
+          </div>
+
+          <h3 class="h6 mt-2">LinkedIn: snelstart</h3>
+          <ol>
+            <li>Maak een professionele profielfoto (helder, zakelijke uitstraling).</li>
+            <li>Schrijf een korte, duidelijke kopregel (functie + specialiteit of doel).</li>
+            <li>Vul de 'About' sectie met 2–3 zinnen over wie je bent, wat je zoekt en wat je kunt bieden.</li>
+            <li>Voeg werkervaring en vaardigheden toe; vraag 2–3 aanbevelingen van oud-collega's of werkgevers.</li>
+            <li>Deel relevante posts en reageer op vakinhoudelijke berichten om zichtbaar te blijven.</li>
+          </ol>
+
+          <h3 class="h6 mt-2">Algemene netwerktips</h3>
+          <ul>
+            <li>Ga naar (lokale) netwerkbijeenkomsten of vakgerichte events en noteer 1–2 gesprekspunten per persoon.</li>
+            <li>Stuur een korte follow-up na kennismaking: bedankt + herinnering aan gespreksonderwerp.</li>
+            <li>Onderhoud contacten: plan eens per kwartaal een korte check-in bij belangrijke contacten.</li>
+            <li>Gebruik vrijwilligerswerk of cursussen om ervaring op te bouwen en je netwerk te vergroten.</li>
+          </ul>
+
+          <p class="small-muted mb-0">Voorbeeld LinkedIn-Intro: "Marketingprofessional | 3 jaar ervaring in social media | Hulp bij contentstrategie & groei".</p>
+        </article>
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-info-lg"></i></span>
+            <h3 class="h6 mb-0">Praktische resources</h3>
+          </div>
+          <ul class="mb-0">
+            <li><a href="https://www.rijksoverheid.nl/onderwerpen/arbeidsomstandigheden" target="_blank" rel="noopener">Rijksoverheid — Arbeidsomstandigheden</a></li>
+            <li><a href="https://www.ggddenhaag.nl" target="_blank" rel="noopener">GGD — informatie & regionale ondersteuning</a></li>
+            <li><a href="https://www.minddistrict.nl" target="_blank" rel="noopener">MIND — mentale gezondheid en zelfhulp</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn — profiel maken en netwerken</a></li>
+          </ul>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-person-lines-fill"></i></span>
+            <h3 class="h6 mb-0">CV & sollicitatietips</h3>
+          </div>
+          <ul class="mb-0">
+            <li>Houd je CV overzichtelijk: 1–2 pagina's, duidelijke kopjes en meetbare resultaten.</li>
+            <li>Pas je motivatiebrief aan op de vacature: noem waarom jij past bij het bedrijf en de functie.</li>
+            <li>Oefen gesprekssituaties met voorbeeldvragen en STAR-methode (Situatie, Taak, Actie, Resultaat).</li>
+          </ul>
+        </div>
+
+        <div class="card p-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-chat-dots-fill"></i></span>
+            <h3 class="h6 mb-0">Contact & hulp</h3>
+          </div>
+          <p class="small-muted mb-1">Bespreek problemen op tijd met je leidinggevende, vertrouwenspersoon of HR. Voor juridisch advies kun je terecht bij een rechtswinkel of vakbond.</p>
+          <div class="d-grid">
+            <a href="contact.html" class="btn btn-outline-primary btn-sm">Contact opnemen</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4 mt-auto border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+      <div class="text-muted">&copy; 2025 Werk & Burgerschap</div>
+      <div class="text-muted">Informatie is algemeen van aard — raadpleeg officiële bronnen bij twijfel</div>
+      <div>
+        <a href="privacy.html" class="me-2">Privacy</a>
+        <a href="arbeidsRechtenPlichten.html">Arbeidsrechten</a>
+      </div>
+    </div>
+  </footer>
+<script src="assets/main.js"></script>
+  
 </body>
 
 </html>

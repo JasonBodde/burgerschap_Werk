@@ -1,21 +1,75 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/stylesheet.css" />
-  <title>arbeid rechten en plichten</title>
+  <meta name="description" content="Overzicht van arbeidsrechten en -plichten in Nederland — praktisch en toegankelijk voor werknemers en werkgevers." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="assets/stylesheet.css"/>
+
+  <title>Arbeidsrechten en -plichten</title>
+
+  <style>
+    /* Kleine extra styling voor een moderne uitstraling */
+    :root {
+      --accent: #0d6efd;
+      --muted: #6c757d;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+      border-radius: .5rem;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .toc {
+      position: sticky;
+      top: 1.5rem;
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .5rem;
+      background: rgba(13,110,253,0.08);
+      color: var(--accent);
+      margin-right: .75rem;
+      font-size: 1.25rem;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    footer small a { text-decoration: none; color: inherit; }
+
+    @media (max-width: 767.98px) {
+      .toc { position: static; margin-top: 1rem; }
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
     <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Werk & Burgerschap</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,24 +77,184 @@
 
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="werkZoeken.html">Werk Zoeken</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="arbeidsRechtenPlichten.html">Arbeids Rechten en plichten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tips.html">Tips en ondersteuning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="werkZoeken.html">Werk Zoeken</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="arbeidsRechtenPlichten.html">Arbeidsrechten & plichten</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <main class="container my-5">
+    <div class="hero shadow-sm">
+      <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+        <div class="flex-grow-1">
+          <h1 class="h3 mb-2">Arbeidsrechten en -plichten</h1>
+          <p class="mb-2 text-muted">Praktische informatie over contracten, loon, werktijden, ziekte en waar je terecht kunt bij problemen op het werk.</p>
+          <div>
+            <a href="contact.html" class="btn btn-outline-primary btn-sm"><i class="bi bi-envelope me-1"></i>Contact</a>
+          </div>
+            <br>
+        </div>
+    </div>
+
+      <section class="col-lg-9">
+        <div class="row g-3">
+          <div class="col-12">
+            <article id="rechten-werknemers" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-person-check-fill"></i></span>
+                <h2 class="h6 mb-0">Rechten van werknemers</h2>
+              </div>
+              <ul class="mb-0">
+                <li>Een duidelijk schriftelijk arbeidscontract bij indiensttreding.</li>
+                <li>Minimaal het wettelijk minimumloon en een duidelijke loonstrook.</li>
+                <li>Een veilige en gezonde werkplek (Arbowet).</li>
+                <li>Bescherming tegen discriminatie en onterecht ontslag.</li>
+                <li>Recht op vakantiedagen en doorbetaling bij ziekte volgens de wet.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article id="plichten-werknemers" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-briefcase-fill"></i></span>
+                <h3 class="h6 mb-0">Plichten van werknemers</h3>
+              </div>
+              <ul class="mb-0">
+                <li>Het afgesproken werk goed en zorgvuldig uitvoeren.</li>
+                <li>Naleven van veiligheidsinstructies en bedrijfsregels.</li>
+                <li>Ziekte direct melden en meewerken aan re-integratie.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article id="rechten-werkgevers" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-gem"></i></span>
+                <h3 class="h6 mb-0">Rechten van werkgevers</h3>
+              </div>
+              <ul class="mb-0">
+                <li>Leiding geven en inrichten van het werk binnen wettelijke kaders.</li>
+                <li>Handhaven van regels en (indien nodig) maatregelen bij overtreding.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="plichten-werkgevers" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-shield-fill-check"></i></span>
+                <h3 class="h6 mb-0">Plichten van werkgevers</h3>
+              </div>
+              <ul class="mb-0">
+                <li>Zorgen voor veilige arbeidsomstandigheden en goede instructies.</li>
+                <li>Correct uitbetalen van loon en vakantiegeld.</li>
+                <li>Bij ziekte begeleiding en inspanningen voor re-integratie (Wet verbetering poortwachter).</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="contracten" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-file-earmark-text-fill"></i></span>
+                <h3 class="h6 mb-0">Contracten, proeftijd en opzegging</h3>
+              </div>
+              <p class="mb-0">Contracten kunnen tijdelijk of vast zijn. Proeftijd en opzegtermijnen moeten duidelijk in het contract staan en voldoen aan de wet.
+                Bij ontslag worden meestal procedures gevolgd via het UWV of de kantonrechter, afhankelijk van de situatie.</p>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article id="arbeitstijden" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-clock-fill"></i></span>
+                <h3 class="h6 mb-0">Arbeidstijden, pauzes en rust</h3>
+              </div>
+              <ul class="mb-0">
+                <li>Wettelijke regels voor maximale werkduur en minimale rusttijden (Arbeidstijdenwet).</li>
+                <li>Pauzes zijn verplicht bij langere diensten.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-6">
+            <article id="loon" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-cash-stack"></i></span>
+                <h3 class="h6 mb-0">Loon & minimumloon</h3>
+              </div>
+              <p class="mb-0">Werknemers hebben recht op ten minste het wettelijk minimumloon (afhankelijk van leeftijd). Salarisafspraken kunnen via cao of individuele overeenkomst geregeld worden.</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="ziekte" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+                <h3 class="h6 mb-0">Ziekte, verlof en re-integratie</h3>
+              </div>
+              <p class="mb-0">Melding van ziekte zo snel mogelijk. Werkgever betaalt doorgaans door volgens de wet en moet meewerken aan re-integratie. Bewaar documenten en communicatie bij langdurige ziekte.</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="veiligheid-discriminatie" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-people-fill"></i></span>
+                <h3 class="h6 mb-0">Veiligheid en bescherming tegen discriminatie</h3>
+              </div>
+              <p class="mb-0">Discriminatie, pesten of intimidatie zijn verboden. Werkgevers moeten maatregelen nemen om een veilige en inclusieve werkomgeving te garanderen.</p>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="waar-helpen" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-info-circle-fill"></i></span>
+                <h3 class="h6 mb-0">Waar kun je terecht voor hulp?</h3>
+              </div>
+              <ul class="mb-0">
+                <li><a href="https://www.rijksoverheid.nl" target="_blank" rel="noopener">Rijksoverheid</a> — officiële informatie over arbeidsrecht.</li>
+                <li><a href="https://www.uwv.nl" target="_blank" rel="noopener">UWV</a> — informatie over ontslag, uitkering en re-integratie.</li>
+                <li><a href="https://www.fnv.nl" target="_blank" rel="noopener">FNV</a> en <a href="https://www.cnv.nl" target="_blank" rel="noopener">CNV</a> — vakbonden met informatie en ondersteuning.</li>
+                <li>Juridisch advies via een jurist of rechtswinkel voor concrete problemen.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article id="samenvatting" class="card p-3">
+              <div class="d-flex align-items-center section-title mb-2">
+                <span class="card-icon"><i class="bi bi-lightbulb-fill"></i></span>
+                <h3 class="h6 mb-0">Kort samengevat</h3>
+              </div>
+              <p class="mb-0">Ken je rechten, houd je aan je verplichtingen en bewaar belangrijke documenten (contract, loonstroken, correspondentie). Zoek hulp bij problemen — vroege actie helpt vaak erger te voorkomen.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-light py-4 mt-auto border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+      <div class="text-muted">&copy; 2025 Werk & Burgerschap</div>
+      <div class="text-muted">Informatie is algemeen van aard — raadpleeg officiële bronnen bij twijfel</div>
+      <div>
+        <a href="privacy.html" class="me-2">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+ <script src="assets/main.js"></script>
+
+
 </body>
-</html> -->
+
+</html>

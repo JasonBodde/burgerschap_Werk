@@ -1,22 +1,22 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Informatie over de huidige arbeidsmarkt in Nederland: trends, sectoren met vraag en mogelijkheden voor afgestudeerden." />
+  <title>Werk zoeken — Arbeidsmarkt & kansen voor afgestudeerden</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/stylesheet.css">
-  <title>Werk zoeken</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/stylesheet.css" />
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+<body class="bg-light text-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
     <div class="container">
-
+      <a class="navbar-brand fw-bold" href="index.html">Werk & Burgerschap</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,289 +24,217 @@
 
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="werkZoeken.html">Werk Zoeken</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeids Rechten en plichten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tips.html">Tips en ondersteuning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Werk zoeken — Burgerschap</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/stylesheet.css" />
-  <style>
-    .hero {
-      background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.03));
-      border-radius: .5rem;
-    }
-
-    .step {
-      min-height: 140px;
-    }
-
-    .resource-card img {
-      max-height: 120px;
-      object-fit: cover;
-      border-radius: .25rem;
-    }
-  </style>
-</head>
-
-<body class="bg-light text-dark">
-
-  <nav class="navbar navbar-expand-lg navbar-white bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/logo.png" alt="" width="36" height="36" class="me-2" onerror="this.style.display='none'">
-        <span class="fw-bold">Burgerschap</span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="werkZoeken.html">Werk zoeken</a></li>
-          <li class="nav-item"><a class="nav-link" href="arbeidsRechtenPlichten.html">Rechten & plichten</a></li>
-          <li class="nav-item"><a class="nav-link" href="tips.html">Tips & ondersteuning</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="werkZoeken.html">Werk Zoeken</a></li>
+          <li class="nav-item"><a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeidsrechten</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="py-5">
-    <div class="container">
-      <div class="hero p-4 p-lg-5 d-flex flex-column flex-lg-row align-items-center gap-4">
-        <div class="flex-grow-1">
-          <h1 class="h2 mb-2">Hoe vind je werk? Praktische stappen en hulpmiddelen</h1>
-          <p class="mb-3 text-muted">Stap voor stap: zoeken, solliciteren en binnenkomen op de arbeidsmarkt. Voorbeelden,
-            checklists en links naar nuttige bronnen.</p>
-
-          <form id="searchForm" class="row g-2 align-items-center">
-            <div class="col-12 col-md-6">
-              <label class="visually-hidden" for="q">Zoekterm</label>
-              <input id="q" class="form-control form-control-lg" type="search" placeholder="Zoek vacatures (bijv. verkoop, administratie)">
-            </div>
-
-            <div class="col-6 col-md-3">
-              <label class="visually-hidden" for="location">Locatie</label>
-              <input id="location" class="form-control form-control-lg" type="text" placeholder="Plaats of regio">
-            </div>
-
-            <div class="col-6 col-md-2">
-              <label class="visually-hidden" for="type">Type</label>
-              <select id="type" class="form-select form-select-lg">
-                <option value="">Alle types</option>
-                <option value="Fulltime">Fulltime</option>
-                <option value="Parttime">Parttime</option>
-                <option value="Tijdelijk">Tijdelijk</option>
-                <option value="Stage">Stage</option>
-              </select>
-            </div>
-
-            <div class="col-12 col-md-1 d-grid">
-              <button type="submit" class="btn btn-primary btn-lg">Zoek</button>
-            </div>
-          </form>
+  <main class="container my-5">
+    <div class="hero shadow-sm mb-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+        <div>
+          <h1 class="h3 mb-1">De huidige arbeidsmarkt — trends & kansen voor afgestudeerden</h1>
+          <p class="mb-0 text-muted">Overzicht van actuele trends, sectoren met vraag, vaardigheden in trek en concrete mogelijkheden voor starters.</p>
         </div>
-
-        <div class="d-none d-lg-block" style="width:320px">
-          <img src="https://via.placeholder.com/320x200?text=Zoek+werk" alt="Zoek werk" class="img-fluid rounded shadow-sm">
+        <div class="text-muted small d-none d-md-block text-end">
+          <div><strong>Actueel & praktisch</strong></div>
+          <div>Algemene informatie — controleer bronnen voor vacature- en salarisspecificaties</div>
         </div>
       </div>
     </div>
-  </header>
 
-  <main class="py-5">
-    <div class="container">
-
-      <section class="mb-5">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm step">
-              <div class="card-body">
-                <h5 class="card-title">1. Bereid je voor</h5>
-                <p class="small text-muted">Maak een overzichtelijk CV, schrijf een korte motivatie en verzamel referenties.</p>
-                <ul class="small">
-                  <li>Secties: contact, werkervaring, opleiding, vaardigheden.</li>
-                  <li>Houd het kort en concreet (1-2 pagina's).</li>
-                </ul>
-              </div>
-            </div>
+    <div class="row g-4">
+      <section class="col-lg-8">
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-bar-chart-line-fill"></i></span>
+            <h2 class="h6 mb-0">Kort overzicht van de arbeidsmarkt (2025)</h2>
           </div>
+          <p class="mb-0">De Nederlandse arbeidsmarkt kenmerkt zich momenteel door krapte in veel sectoren, digitalisering van functies en een toegenomen vraag naar technisch en zorgpersoneel. Tegelijkertijd zorgen automatisering en AI voor veranderingen in functiebeschrijvingen en benodigde vaardigheden.</p>
+        </article>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm step">
-              <div class="card-body">
-                <h5 class="card-title">2. Zoek gericht</h5>
-                <p class="small text-muted">Gebruik meerdere bronnen: vacaturebanken, bedrijfswebsites en netwerken.</p>
-                <p class="small mb-0">Tip: stel e-mailalerts of zoekopdrachten in om nieuwe kansen snel te zien.</p>
-              </div>
-            </div>
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+            <h3 class="h6 mb-0">Belangrijke trends</h3>
           </div>
+          <ul>
+            <li><strong>Digitalisering & AI:</strong> meer vraag naar data-analisten, software-ontwikkelaars, AI-specialisten en mensen die werken met digitaal beheer.</li>
+            <li><strong>Zorg en welzijn:</strong> door vergrijzing en tekorten veel vraag naar verpleegkundigen, verzorgenden en paramedici.</li>
+            <li><strong>Duurzame energie & bouw:</strong> projecten voor energie-transitie creëren banen in techniek, installatie en projectmanagement.</li>
+            <li><strong>Flexibilisering & hybride werken:</strong> veel functies bieden hybride werk of flexibele contractvormen; freelance/zzp blijft groeien in bepaalde sectoren.</li>
+            <li><strong>Levenslang leren:</strong> werkgevers investeren vaker in bijscholing; soft skills gecombineerd met technische kennis zijn waardevol.</li>
+          </ul>
+        </article>
 
-          <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm step">
-              <div class="card-body">
-                <h5 class="card-title">3. Solliciteer slim</h5>
-                <p class="small text-muted">Stem je CV en motivatiebrief af op de vacature en vermeld relevante voorbeelden.</p>
-                <p class="small mb-0">Volg op: stuur na 1 week een korte follow-up als je niets hebt gehoord.</p>
-              </div>
-            </div>
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-briefcase-fill"></i></span>
+            <h3 class="h6 mb-0">Sectoren met veel vraag</h3>
           </div>
+          <ul>
+            <li>ICT & softwareontwikkeling (full‑stack, cloud, cybersecurity)</li>
+            <li>Zorg & maatschappelijke dienstverlening</li>
+            <li>Techniek, installatie & duurzame energie</li>
+            <li>Onderwijs (met name tekorten in sommige vakken en regio's)</li>
+            <li>Logistiek & e‑commerce</li>
+            <li>Financiële dienstverlening en compliance</li>
+          </ul>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-tools"></i></span>
+            <h3 class="h6 mb-0">Vaardigheden in trek</h3>
+          </div>
+          <ul>
+            <li><strong>Technische vaardigheden:</strong> programmeren, datamanagement, cloud‑platforms, industriële technieken.</li>
+            <li><strong>Digitale basis:</strong> Excel gevorderd, online samenwerken, basis cybersecurity‑bewustzijn.</li>
+            <li><strong>Soft skills:</strong> communicatie, probleemoplossend vermogen, samenwerken en aanpassingsvermogen.</li>
+            <li><strong>Talen:</strong> Nederlands (veel werkgevers), Engels; extra talen (Frans, Duits) zijn een plus in sommige regio's.</li>
+            <li><strong>Leervermogen:</strong> bereidheid om snel nieuwe tools te leren (continuous learning).</li>
+          </ul>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-people-fill"></i></span>
+            <h3 class="h6 mb-0">Mogelijkheden en paden voor afgestudeerden</h3>
+          </div>
+          <ul>
+            <li><strong>Stages en afstudeeropdrachten:</strong> ingang tot organisaties en vaak leidend tot startersbanen.</li>
+            <li><strong>Traineeships & graduateprogramma's:</strong> ideaal om ervaring op te doen en snel door te groeien.</li>
+            <li><strong>Startersfuncties:</strong> zoek naar functies met 'junior', 'assist' of 'trainee' in de titel.</li>
+            <li><strong>ZZP / freelancen:</strong> in creatieve, ICT en consultancy-sectoren een optie — begin met kleine opdrachten en netwerk opbouwen.</li>
+            <li><strong>Doorleren & certificaten:</strong> korte cursussen (bootcamps), online certificaten (Coursera, edX) en vakgerichte opleidingen vergroten kansen.</li>
+            <li><strong>Werken via detacherings- of uitzendbureaus:</strong> snelle manier om werkervaring op te doen en te oriënteren.</li>
+          </ul>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-search"></i></span>
+            <h3 class="h6 mb-0">Praktische tips voor het zoeken naar je eerste baan</h3>
+          </div>
+          <ol>
+            <li>Optimaliseer je CV en LinkedIn: duidelijke kopregel, concrete resultaten en relevante projecten.</li>
+            <li>Netwerk actief: universiteitsalumni, LinkedIn, evenementen en vakverenigingen.</li>
+            <li>Solliciteer gericht: pas je motivatiebrief aan op de vacature en bedrijfscultuur.</li>
+            <li>Maak gebruik van campuscarrièreservice, studentenbanen en jobboards (Indeed, NationaleVacaturebank, LinkedIn).</li>
+            <li>Wees flexibel: overweeg tijdelijke of deeltijdfuncties om ervaring op te bouwen.</li>
+          </ol>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-globe"></i></span>
+            <h3 class="h6 mb-0">Regionale verschillen</h3>
+          </div>
+          <p class="mb-0">De vraag naar functies verschilt per regio: Randstad en technologische hubs (Eindhoven, Amsterdam, Delft) bieden meer ICT- en hightechvacatures; regio's met veel zorginstellingen vragen meer zorgpersoneel. Check regionale vacaturebanken en gemeenten voor lokale kansen.</p>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-coin"></i></span>
+            <h3 class="h6 mb-0">Salarisverwachtingen en arbeidsvoorwaarden</h3>
+          </div>
+          <ul>
+            <li>Startersalarissen variëren sterk per sector en regio; informeer via vacatures en salarisonderzoeken.</li>
+            <li>Buiten salaris letten op secundaire voorwaarden: vakantiedagen, opleidingsbudget, reiskosten, pensioen en mogelijkheden voor hybride werk.</li>
+            <li>Onderhandel bij een aanbieding: focus op groeimogelijkheden, opleiding en beoordeling na 6–12 maanden.</li>
+          </ul>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-folder-symlink-fill"></i></span>
+            <h3 class="h6 mb-0">Concrete bronnen & vacaturesites</h3>
+          </div>
+          <ul>
+            <li><a href="https://www.werk.nl" target="_blank" rel="noopener">Werk.nl (UWV)</a></li>
+            <li><a href="https://www.werkgeversservicepunt.nl" target="_blank" rel="noopener">Werkgeversservicepunt (regionaal)</a></li>
+            <li><a href="https://www.nationalevacaturebank.nl" target="_blank" rel="noopener">Nationale Vacaturebank</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.cbs.nl" target="_blank" rel="noopener">CBS — arbeidsmarktdata</a></li>
+          </ul>
+        </article>
+
+        <article class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-person-check-fill"></i></span>
+            <h3 class="h6 mb-0">Advies voor internationale afgestudeerden</h3>
+          </div>
+          <ul>
+            <li>Controleer werkvergunning- en verblijfsregels (IND) en begin ruim op tijd met aanvragen.</li>
+            <li>Verbeter (zakelijke) Nederlandse taalvaardigheid voor veel functies — cursussen en taalpartners helpen.</li>
+            <li>Leg uit in je CV en sollicitatie hoe internationale ervaring waarde toevoegt.</li>
+          </ul>
+        </article>
+
+        <div class="text-center mt-3">
+          <a href="contact.html" class="btn btn-primary btn-animated"><i class="bi bi-envelope me-1"></i>Hulp nodig? Neem contact op</a>
         </div>
       </section>
 
-      <section class="mb-5">
-        <div class="row g-4 align-items-start">
-          <div class="col-lg-8">
-            <h3 class="h5 mb-3">Praktische voorbeelden & voorbeeldteksten</h3>
-
-            <div class="card mb-3 shadow-sm">
-              <div class="card-body">
-                <h6 class="card-title mb-2">Voorbeeld korte motivatie</h6>
-                <p class="small text-muted mb-0">"Beste [naam], ik reageer met interesse op de functie [functie]. In mijn vorige baan bij
-                  [bedrijf] heb ik ervaring met [vaardigheid] en ik ben gemotiveerd om bij te dragen aan [doel]. Graag licht ik mijn brief
-                  toe in een gesprek."</p>
-              </div>
-            </div>
-
-            <div class="card mb-3 shadow-sm">
-              <div class="card-body">
-                <h6 class="card-title mb-2">CV-tips</h6>
-                <ol class="small mb-0">
-                  <li>Begin met contactgegevens en korte profielregel.</li>
-                  <li>Beschrijf resultaten in plaats van alleen taken.</li>
-                  <li>Gebruik actieve werkwoorden en concrete cijfers waar mogelijk.</li>
-                </ol>
-              </div>
-            </div>
-
-            <div class="card mb-3 shadow-sm">
-              <div class="card-body">
-                <h6 class="card-title mb-2">Voorbereiding sollicitatiegesprek</h6>
-                <ul class="small mb-0">
-                  <li>Oefen antwoorden op veelgestelde vragen (sterke/zwakke punten).</li>
-                  <li>Bereid 2-3 voorbeelden voor waarin je probleemoplossend werkte.</li>
-                  <li>Kom op tijd en kleed je passend bij de functie.</li>
-                </ul>
-              </div>
-            </div>
-
+      <aside class="col-lg-4">
+        <div class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-lightbulb-fill"></i></span>
+            <h4 class="h6 mb-0">Snelcheck: welke route past bij mij?</h4>
           </div>
-
-          <aside class="col-lg-4">
-            <h6 class="mb-3">Handige bronnen</h6>
-
-            <div class="card mb-3 resource-card shadow-sm">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="https://via.placeholder.com/120x80?text=Site" alt="">
-                </div>
-                <div class="col-8">
-                  <div class="card-body py-2">
-                    <h6 class="card-title small mb-1">Vacaturebanken</h6>
-                    <p class="small text-muted mb-0">Indeed, Nationale Vacaturebank, LinkedIn</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card mb-3 resource-card shadow-sm">
-              <div class="row g-0">
-                <div class="col-4">
-                  <img src="https://via.placeholder.com/120x80?text=Cursus" alt="">
-                </div>
-                <div class="col-8">
-                  <div class="card-body py-2">
-                    <h6 class="card-title small mb-1">Gratis cursussen</h6>
-                    <p class="small text-muted mb-0">Volg online trainingen voor sollicitatievaardigheden en taal.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">Snel hulp nodig?</h6>
-                <p class="small mb-2">Maak een afspraak met een loopbaanadviseur of bezoek een loket in jouw gemeente.</p>
-                <a href="contact.html" class="btn btn-outline-primary btn-sm">Contact</a>
-              </div>
-            </div>
-          </aside>
+          <ul class="mb-0">
+            <li><strong>Wil je leren en doorgroeien:</strong> traineeship of graduateprogramma.</li>
+            <li><strong>Wil je snel ervaring:</strong> stage, uitzendwerk of vrijwilligerswerk.</li>
+            <li><strong>Wil je zelfstandig werken:</strong> freelance opdrachten of zzp (begin parttime).</li>
+            <li><strong>Onzeker over richting:</strong> loopbaancoach of studentendecaan kan helpen.</li>
+          </ul>
         </div>
-      </section>
 
-      <section class="mb-5">
-        <h3 class="h5 mb-3">Checklist voor verzending</h3>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">Controleer spelling en contactgegevens</li>
-              <li class="list-group-item">Zorg dat CV en motivatie bij elkaar passen</li>
-              <li class="list-group-item">Maak onderwerpregel van e-mail duidelijk</li>
-            </ul>
+        <div class="card p-3 mb-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-journal-text"></i></span>
+            <h4 class="h6 mb-0">Even praktisch: sollicitatie-tools</h4>
           </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item">Bijlagen als PDF opslaan</li>
-              <li class="list-group-item">Vermeld beschikbaarheid en salarisindicatie (indien gevraagd)</li>
-              <li class="list-group-item">Noteer datum van verzending</li>
-            </ul>
+          <ul class="mb-0">
+            <li>Templates voor CV & motivatiebrief — gebruik 1–2 pagina's en meetbare resultaten.</li>
+            <li>LinkedIn-profiel up-to-date houden (foto, kopregel, samenvatting).</li>
+            <li>Oefen sollicitatiegesprekken met STAR-methode.</li>
+            <li>Gebruik vacature-alerts en pas zoekwoorden aan (junior, starter, trainee).</li>
+          </ul>
+        </div>
+
+        <div class="card p-3">
+          <div class="section-title mb-2">
+            <span class="card-icon"><i class="bi bi-people"></i></span>
+            <h4 class="h6 mb-0">Hulp & contact</h4>
+          </div>
+          <p class="small-muted mb-2">Wil je persoonlijke tips of hulp bij je CV? Neem contact op of gebruik de campus carrièreservice.</p>
+          <div class="d-grid">
+            <a href="contact.html" class="btn btn-outline-primary btn-sm">Contact opnemen</a>
           </div>
         </div>
-      </section>
-
+      </aside>
     </div>
   </main>
 
-  <footer class="bg-white border-top py-4 mt-4">
-    <div class="container text-center small text-muted">© <span id="year">2025</span> Burgerschap — Werk zoeken</div>
+  <footer class="bg-light py-4 mt-auto border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+      <div class="text-muted">&copy; 2025 Werk & Burgerschap</div>
+      <div class="text-muted">Informatie is algemeen van aard — raadpleeg officiële bronnen bij twijfel</div>
+      <div>
+        <a href="arbeidsRechtenPlichten.html" class="me-2">Arbeidsrechten</a>
+        <a href="tips.html">Tips</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <script>
-    // Zet huidig jaar
-    document.querySelector('#year').textContent = new Date().getFullYear();
-
-    // Prevent default search (demo) — voeg later filtering toe indien gewenst
-    document.getElementById('searchForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      // Eenvoudige feedback bij zoeken
-      const q = document.getElementById('q').value.trim();
-      const loc = document.getElementById('location').value.trim();
-      const type = document.getElementById('type').value;
-      alert('Zoeken gestart: ' + (q || 'alle functies') + (loc ? ' — ' + loc : '') + (type ? ' — ' + type : ''));
-    });
-  </script>
+  <script src="assets/main.js"></script>
+  <script src="assets/animations.js" defer></script>
 </body>
+
+</html>

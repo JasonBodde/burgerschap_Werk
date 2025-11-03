@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactpagina — stuur een bericht voor vragen of ondersteuning." />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/stylesheet.css">
-  <title>Contactpagina</title>
+    crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="assets/stylesheet.css" />
+  <title>Contact — Werk & Burgerschap</title>
+
+  <style>
+    body { display:flex; flex-direction:column; min-height:100vh; }
+    .hero { background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02)); padding:2rem; border-radius:.5rem; margin-bottom:1.5rem; }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
     <div class="container">
-
+      <a class="navbar-brand fw-bold" href="index.html">Werk & Burgerschap</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,69 +33,104 @@
 
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="werkZoeken.html">Werk Zoeken</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeids Rechten en plichten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tips.html">Tips en ondersteuning</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="werkZoeken.html">Werk Zoeken</a></li>
+          <li class="nav-item"><a class="nav-link" href="arbeidsRechtenPlichten.html">Arbeidsrechten & plichten</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips.html">Tips & ondersteuning</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="wrapper bg-secondary">
-    <header class="py-5 mb-4 shadow-sm">
-      <div class="container text-center">
-        <h1 class="display-5 text-primary fw-bold">Neem contact met ons op</h1>
-        <p class="lead text-secondary">Heeft u vragen of problemen dan staan wij klaar om u te helpen kom naar ons
-          bedrijf of neem contact met ons op.</p>
-      </div>
-    </header>
 
-    <main class="container mb-5">
-      <div class="row mb-5">
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body text-center">
-              <h4 class="card-title text-primary">Ons adres</h4>
-              <p class="card-text">Brasserskade 1, 2612 CA Delft</p>
-              <img src="assets/map.jpg" class="img-fluid rounded" alt="Map">
-            </div>
+  <main class="container my-5">
+    <div class="hero shadow-sm">
+      <div class="d-flex justify-content-between align-items-start gap-3">
+        <div>
+          <h1 class="h4 mb-1">Neem contact met ons op</h1>
+          <p class="text-muted mb-0">Vragen of ondersteuning? Vul onderstaand formulier in of gebruik de contactgegevens.</p>
+        </div>  
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="h6 mb-3">Contactformulier</h2>
+
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Naam</label>
+                <input type="text" id="name" class="form-control" placeholder="Je naam" required />
+                <div class="invalid-feedback">Vul je naam in.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="naam@voorbeeld.nl" required />
+                <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="subject" class="form-label">Onderwerp</label>
+                <input type="text" id="subject" class="form-control" placeholder="Kort onderwerp" required />
+                <div class="invalid-feedback">Vul een onderwerp in.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Bericht</label>
+                <textarea id="message" class="form-control" rows="6" placeholder="Schrijf je bericht..." required></textarea>
+                <div class="invalid-feedback">Vul je bericht in.</div>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary"><i class="bi bi-envelope-fill me-1"></i>Verstuur bericht</button>
+              </div>
+
+              <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+                Bedankt — je bericht is klaargezet in je e-mailclient of wordt verzonden. We nemen zo snel mogelijk contact op.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <aside class="col-lg-5">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body text-center">
+            <h3 class="h6 text-primary">Direct contact</h3>
+            <p class="mb-1"><strong>E-mail</strong>: <a href="mailto:werkZoeken@gmail.com">werkZoeken@gmail.com</a></p>
+            <p class="mb-1"><strong>Telefoon</strong>: +31 6 1215 1987</p>
+            <p class="mb-0"><strong>Openingstijden</strong>: Ma-Vr 09:00 - 17:00</p>
           </div>
         </div>
 
-        <div class="col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <div class="card-body">
-              <h4 class="card-title text-primary text-center">Contactgegevens</h4>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center">
-                  <strong>E-mail:</strong> <a href="mailto:werkZoeken@gmail.com">werkZoeken@gmail.com</a>
-                </li>
-                <li class="list-group-item text-center">
-                  <strong>Telefoon:</strong> +31 6 1215 1987
-                </li>
-              </ul>
-            </div>
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h3 class="h6 text-primary">Bezoekadres</h3>
+            <p class="mb-2">Brasserskade 1, 2612 CA Delft</p>
+            <img src="assets/map.jpg" class="img-fluid rounded" alt="Locatie op kaart" />
           </div>
         </div>
-      </div>
-  </div>
-  <div class="text-center">
-    <a href="index.html" class="btn btn-outline-primary btn-lg">
-      Terug naar Home
-    </a>
-  </div>
+      </aside>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-outline-primary">Terug naar Home</a>
+    </div>
   </main>
+
+  <footer class="bg-light py-4 mt-auto border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
+      <div class="text-muted">&copy; 2025 Werk & Burgerschap</div>
+      <div>
+        <a href="arbeidsRechtenPlichten.html">Arbeidsrechten</a>
+      </div>
+    </div>
+  </footer>
+<script src="assets/main.js"></script>
+
 </body>
 
 </html>
