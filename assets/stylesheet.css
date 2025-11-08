@@ -349,6 +349,7 @@ img.img-fluid{
   background-color: var(--bg) !important;
 }
 
+
 /* Extra kleurrijke elementen */
 /* Kleurrijke badges */
 .badge-color-1 { background: linear-gradient(135deg, var(--accent), var(--color-teal)); color: white; }

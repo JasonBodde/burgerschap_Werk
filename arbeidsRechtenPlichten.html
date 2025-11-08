@@ -17,7 +17,7 @@
   <style>
    
     :root {
-      --accent: #0d6efd;
+      --accent: #06a77d;
       --muted: #6c757d;
     }
 
@@ -28,10 +28,12 @@
     }
 
     .hero {
-      background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+      background: linear-gradient(135deg, rgba(6,167,125,0.12), rgba(255,107,53,0.08), rgba(155,89,182,0.06));
       border-radius: .5rem;
       padding: 2rem;
       margin-bottom: 1.5rem;
+      box-shadow: 0 8px 24px rgba(6,167,125,0.1), 0 4px 12px rgba(255,107,53,0.06);
+      border: 1px solid rgba(6,167,125,0.15);
     }
 
     .toc {
@@ -46,10 +48,11 @@
       align-items: center;
       justify-content: center;
       border-radius: .5rem;
-      background: rgba(13,110,253,0.08);
+      background: linear-gradient(135deg, rgba(6,167,125,0.15), rgba(255,107,53,0.1));
       color: var(--accent);
       margin-right: .75rem;
       font-size: 1.25rem;
+      box-shadow: inset 0 -2px 0 rgba(0,0,0,0.02), 0 4px 8px rgba(6,167,125,0.12);
     }
 
     .section-title {
@@ -102,115 +105,127 @@
 
       <section class="col-lg-9">
         <div class="row g-3">
-          <div class="col-12">
-            <article id="rechten-werknemers" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-person-check-fill"></i></span>
-                <h2 class="h6 mb-0">Rechten van werknemers</h2>
-              </div>
-              <ul class="mb-0">
-                <li><strong>Schriftelijk contract:</strong> een duidelijk schriftelijk arbeidscontract bij indiensttreding met alle belangrijke afspraken zoals functie, loon, werktijden en proeftijd.</li>
-                <li><strong>Minimumloon en loonstrook:</strong> minimaal het wettelijk minimumloon (afhankelijk van leeftijd) en een duidelijke loonstrook met alle componenten zoals bruto loon, belastingen en netto loon.</li>
-                <li><strong>Veilige werkplek:</strong> een veilige en gezonde werkplek volgens de Arbowet. Je werkgever moet zorgen voor goede arbeidsomstandigheden en veiligheidsinstructies.</li>
-                <li><strong>Bescherming tegen discriminatie:</strong> bescherming tegen discriminatie en onterecht ontslag. Discriminatie op basis van geslacht, leeftijd, afkomst of andere kenmerken is verboden.</li>
-                <li><strong>Vakantiedagen en ziekte:</strong> recht op vakantiedagen (minimaal 4x je contracturen per week) en doorbetaling bij ziekte volgens de wet. Je werkgever moet je loon doorbetalen tijdens ziekte.</li>
-              </ul>
-            </article>
-          </div>
+           <!-- Rechten van werknemers -->
+     
 
-          <div class="col-md-6">
-            <article id="plichten-werknemers" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-briefcase-fill"></i></span>
-                <h3 class="h6 mb-0">Plichten van werknemers</h3>
-              </div>
-              <ul class="mb-0">
-                <li><strong>Werk goed uitvoeren:</strong> het afgesproken werk goed en zorgvuldig uitvoeren volgens de afspraken in je contract. Dit betekent dat je je best doet en je verantwoordelijkheden serieus neemt.</li>
-                <li><strong>Veiligheidsinstructies:</strong> naleven van veiligheidsinstructies en bedrijfsregels. Deze zijn er voor je eigen veiligheid en die van je collega's. Overtreding kan leiden tot disciplinaire maatregelen.</li>
-                <li><strong>Ziekte melden:</strong> ziekte direct melden aan je werkgever (meestal voor het begin van je werkdag) en meewerken aan re-integratie. Wees eerlijk over je situatie en werk mee aan herstel.</li>
-              </ul>
-            </article>
-          </div>
+    <!-- Rechten van werknemers -->
+    <div class="col-12">
+      <article id="rechten-werknemers" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-person-check-fill"></i></span>
+          <h2 class="h6 mb-0">Rechten van werknemers</h2>
+        </div>
+        <ul class="mb-0">
+          <li><strong>Contract:</strong> Als je gaat werken, heb je recht op een schriftelijk contract. Hierin staan afspraken over je functie, loon, werktijden, proeftijd en andere belangrijke zaken.</li>
+          <li><strong>Loon en loonstrook:</strong> Je moet minstens het wettelijk minimumloon krijgen. Elke maand ontvang je een loonstrook waarop staat hoeveel je verdient, hoeveel belasting je betaalt en wat je netto overhoudt.</li>
+          <li><strong>Veilige werkplek:</strong> Je werkgever moet zorgen voor een veilige en gezonde werkplek. Dit betekent goede werkomstandigheden, duidelijke instructies en bescherming tegen gevaar.</li>
+          <li><strong>Gelijke behandeling:</strong> Je mag niet worden benadeeld vanwege je afkomst, geslacht, leeftijd, geloof of beperking. Discriminatie is verboden en je hebt recht op bescherming.</li>
+          <li><strong>Vakantie en ziekte:</strong> Je hebt recht op vakantiedagen en doorbetaling bij ziekte. Dit is wettelijk geregeld en geldt voor alle werknemers.</li>
+        </ul>
+      </article>
+    </div>
 
-          <div class="col-md-6">
-            <article id="rechten-werkgevers" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-gem"></i></span>
-                <h3 class="h6 mb-0">Rechten van werkgevers</h3>
-              </div>
-              <ul class="mb-0">
-                <li><strong>Leiding geven:</strong> leiding geven en inrichten van het werk binnen wettelijke kaders. Werkgevers hebben het recht om te bepalen hoe het werk wordt uitgevoerd, zolang dit binnen de wet blijft.</li>
-                <li><strong>Regels handhaven:</strong> handhaven van regels en (indien nodig) maatregelen bij overtreding. Werkgevers mogen disciplinaire maatregelen nemen bij overtreding van regels, maar dit moet proportioneel zijn.</li>
-              </ul>
-            </article>
-          </div>
+    <!-- Plichten van werknemers -->
+    <div class="col-md-6">
+      <article id="plichten-werknemers" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-briefcase-fill"></i></span>
+          <h3 class="h6 mb-0">Plichten van werknemers</h3>
+        </div>
+        <ul class="mb-0">
+          <li><strong>Goed werk leveren:</strong> Je moet je werk zorgvuldig en volgens afspraak uitvoeren. Dit betekent op tijd komen, je taken serieus nemen en je best doen.</li>
+          <li><strong>Regels volgen:</strong> Je moet je houden aan de veiligheidsregels en bedrijfsafspraken. Zo blijft het werk veilig en prettig voor iedereen.</li>
+          <li><strong>Ziek melden:</strong> Als je ziek bent, moet je dit zo snel mogelijk melden. Meestal voor het begin van je werkdag. Werk mee aan je herstel en volg de afspraken over re-integratie.</li>
+        </ul>
+      </article>
+    </div>
 
-          <div class="col-12">
-            <article id="plichten-werkgevers" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-shield-fill-check"></i></span>
-                <h3 class="h6 mb-0">Plichten van werkgevers</h3>
-              </div>
-              <ul class="mb-0">
-                <li><strong>Veilige arbeidsomstandigheden:</strong> zorgen voor veilige arbeidsomstandigheden en goede instructies volgens de Arbowet. Werkgevers moeten regelmatig risico-inventarisaties uitvoeren en maatregelen nemen.</li>
-                <li><strong>Correct uitbetalen:</strong> correct uitbetalen van loon en vakantiegeld (8% van je jaarloon) op de afgesproken datum. Loon moet minimaal het wettelijk minimumloon zijn.</li>
-                <li><strong>Ziekte en re-integratie:</strong> bij ziekte begeleiding en inspanningen voor re-integratie volgens de Wet verbetering poortwachter. Werkgevers moeten een plan van aanpak opstellen en uitvoeren.</li>
-              </ul>
-            </article>
-          </div>
+    <!-- Rechten van werkgevers -->
+    <div class="col-md-6">
+      <article id="rechten-werkgevers" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-gem"></i></span>
+          <h3 class="h6 mb-0">Rechten van werkgevers</h3>
+        </div>
+        <ul class="mb-0">
+          <li><strong>Leiding geven:</strong> Werkgevers mogen bepalen hoe het werk wordt georganiseerd. Ze mogen taken verdelen en aangeven wat er van je verwacht wordt.</li>
+          <li><strong>Regels handhaven:</strong> Als je je niet aan de regels houdt, mag je werkgever maatregelen nemen. Dit moet wel eerlijk en volgens de wet gebeuren.</li>
+        </ul>
+      </article>
+    </div>
 
-          <div class="col-12">
-            <article id="contracten" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-file-earmark-text-fill"></i></span>
-                <h3 class="h6 mb-0">Contracten, proeftijd en opzegging</h3>
-              </div>
-              <p class="mb-0">Contracten kunnen tijdelijk of vast zijn. Proeftijd (maximaal 2 maanden voor vaste contracten, 1 maand voor tijdelijke) en opzegtermijnen moeten duidelijk in het contract staan en voldoen aan de wet. Bij ontslag worden meestal procedures gevolgd via het UWV (bij ontslagvergunning) of de kantonrechter (bij ontbinding), afhankelijk van de situatie. Bewaar altijd een kopie van je contract en alle belangrijke correspondentie.</p>
-            </article>
-          </div>
+    <!-- Plichten van werkgevers -->
+    <div class="col-12">
+      <article id="plichten-werkgevers" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-shield-fill-check"></i></span>
+          <h3 class="h6 mb-0">Plichten van werkgevers</h3>
+        </div>
+        <ul class="mb-0">
+          <li><strong>Veilige werkplek:</strong> Werkgevers moeten zorgen voor een veilige werkomgeving. Ze moeten risico’s in kaart brengen en maatregelen nemen om ongelukken te voorkomen.</li>
+          <li><strong>Loon betalen:</strong> Je loon en vakantiegeld moeten op tijd en correct worden betaald. Dit is een wettelijke verplichting.</li>
+          <li><strong>Hulp bij ziekte:</strong> Als je ziek bent, moet je werkgever je begeleiden bij je terugkeer naar werk. Dit gebeurt volgens vaste regels en met hulp van een bedrijfsarts.</li>
+        </ul>
+      </article>
+    </div>
 
-          <div class="col-md-6">
-            <article id="arbeitstijden" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-clock-fill"></i></span>
-                <h3 class="h6 mb-0">Arbeidstijden, pauzes en rust</h3>
-              </div>
-              <ul class="mb-0">
-                <li><strong>Arbeidstijdenwet:</strong> wettelijke regels voor maximale werkduur (maximaal 12 uur per dag, 60 uur per week gemiddeld over 4 weken) en minimale rusttijden (11 uur tussen diensten, minimaal 36 uur per week).</li>
-                <li><strong>Pauzes:</strong> pauzes zijn verplicht bij langere diensten (bij meer dan 5,5 uur werk minimaal 30 minuten pauze, bij meer dan 10 uur minimaal 45 minuten).</li>
-              </ul>
-            </article>
-          </div>
+    <!-- Contracten -->
+    <div class="col-12">
+      <article id="contracten" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-file-earmark-text-fill"></i></span>
+          <h3 class="h6 mb-0">Contracten, proeftijd en ontslag</h3>
+        </div>
+        <p class="mb-0">Een contract kan tijdelijk of vast zijn. De proeftijd is meestal 1 maand, soms 2 maanden bij een vast contract. Ontslag moet volgens vaste regels verlopen, bijvoorbeeld via het UWV of de kantonrechter. Bewaar altijd je contract en belangrijke documenten goed.</p>
+      </article>
+    </div>
 
-          <div class="col-md-6">
-            <article id="loon" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-cash-stack"></i></span>
-                <h3 class="h6 mb-0">Loon & minimumloon</h3>
-              </div>
-              <p class="mb-0">Werknemers hebben recht op ten minste het wettelijk minimumloon (afhankelijk van leeftijd: 21+ krijgt het volledige minimumloon, jongere werknemers krijgen een percentage). Salarisafspraken kunnen via cao (collectieve arbeidsovereenkomst) of individuele overeenkomst geregeld worden. Het minimumloon wordt jaarlijks aangepast. Check de actuele bedragen op de website van de Rijksoverheid.</p>
-            </article>
-          </div>
+    <!-- Arbeidstijden -->
+    <div class="col-md-6">
+      <article id="arbeitstijden" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-clock-fill"></i></span>
+          <h3 class="h6 mb-0">Arbeidstijden en pauzes</h3>
+        </div>
+        <ul class="mb-0">
+          <li><strong>Werktijden:</strong> Je mag maximaal 12 uur per dag werken en gemiddeld 60 uur per week. Je moet ook genoeg rust krijgen tussen je diensten.</li>
+          <li><strong>Pauzes:</strong> Werk je langer dan 5,5 uur? Dan heb je recht op pauze. Bij lange werkdagen is een langere pauze verplicht.</li>
+        </ul>
+      </article>
+    </div>
 
-          <div class="col-12">
-            <article id="ziekte" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-heart-pulse-fill"></i></span>
-                <h3 class="h6 mb-0">Ziekte, verlof en re-integratie</h3>
-              </div>
-              <p class="mb-0">Melding van ziekte zo snel mogelijk (meestal voor het begin van je werkdag). Werkgever betaalt doorgaans door volgens de wet (minimaal 70% van je loon, vaak 100% in het eerste jaar) en moet meewerken aan re-integratie. Bewaar documenten en communicatie bij langdurige ziekte. Bij ziekte langer dan 6 weken wordt een plan van aanpak opgesteld met de bedrijfsarts.</p>
-            </article>
-          </div>
+    <!-- Loon -->
+    <div class="col-md-6">
+      <article id="loon" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-cash-stack"></i></span>
+          <h3 class="h6 mb-0">Loon & minimumloon</h3>
+        </div>
+        <p class="mb-0">Je hebt recht op het minimumloon. Hoeveel dat is, hangt af van je leeftijd. Je loon kan ook via een cao worden geregeld. Het minimumloon wordt elk jaar aangepast. Kijk op rijksoverheid.nl voor de actuele bedragen.</p>
+      </article>
+    </div>
 
-          <div class="col-12">
-            <article id="veiligheid-discriminatie" class="card p-3">
-              <div class="d-flex align-items-center section-title mb-2">
-                <span class="card-icon"><i class="bi bi-people-fill"></i></span>
-                <h3 class="h6 mb-0">Veiligheid en bescherming tegen discriminatie</h3>
-              </div>
-              <p class="mb-0">Discriminatie, pesten of intimidatie zijn verboden volgens de wet. Werkgevers moeten maatregelen nemen om een veilige en inclusieve werkomgeving te garanderen. Als je te maken krijgt met discriminatie of pesten, meld dit bij je leidinggevende, vertrouwenspersoon of HR. In ernstige gevallen kun je ook contact opnemen met de politie of een melding doen bij het College voor de Rechten van de Mens.</p>
-            </article>
-          </div>
+    <!-- Ziekte -->
+    <div class="col-12">
+      <article id="ziekte" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-heart-pulse-fill"></i></span>
+          <h3 class="h6 mb-0">Ziekte en re-integratie</h3>
+        </div>
+        <p class="mb-0">Ben je ziek? Meld dit zo snel mogelijk. Je krijgt meestal doorbetaald, vaak 100% in het eerste jaar. Bij langdurige ziekte wordt samen met een bedrijfsarts een plan gemaakt om weer aan het werk te gaan.</p>
+      </article>
+    </div>
+
+    <!-- Veiligheid en discriminatie -->
+    <div class="col-12">
+      <article id="veiligheid-discriminatie" class="card p-3">
+        <div class="d-flex align-items-center section-title mb-2">
+          <span class="card-icon"><i class="bi bi-people-fill"></i></span>
+          <h3 class="h6 mb-0">Veiligheid en gelijke behandeling</h3>
+        </div>
+        <p class="mb-0">Iedereen heeft recht op een veilige en prettige werkplek. Pesten, discriminatie en intimidatie zijn verboden. Heb je hier last van? Praat met je leidinggevende, vertrouwenspersoon of HR. Je kunt ook hulp zoeken bij officiële instanties zoals het College voor de Rechten van de Mens.</p>
+      </article>
+    </div>
 
           <div class="col-12">
             <article id="waar-helpen" class="card p-3">
