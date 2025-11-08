@@ -5,32 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contactpagina — stuur een bericht voor vragen of ondersteuning." />
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous" defer></script>
-
   <link rel="stylesheet" href="assets/stylesheet.css" />
   <title>Contact — Werk & Burgerschap</title>
-
-  <style>
-    body { display:flex; flex-direction:column; min-height:100vh; }
-    .hero { background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02)); padding:2rem; border-radius:.5rem; margin-bottom:1.5rem; }
-  </style>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+<body class="page-wrapper">
+  <nav class="navbar navbar-expand-lg nav-modern">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">Werk & Burgerschap</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -43,22 +32,19 @@
     </div>
   </nav>
 
-  <main class="container my-5">
-    <div class="hero shadow-sm">
-      <div class="d-flex justify-content-between align-items-start gap-3">
-        <div>
-          <h1 class="h4 mb-1">Neem contact met ons op</h1>
-          <p class="text-muted mb-0">Vragen of ondersteuning? Vul onderstaand formulier in of gebruik de contactgegevens.</p>
-        </div>  
-      </div>
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Neem contact met ons op</h1>
+      <p class="lead mb-0">Vragen of ondersteuning? Vul onderstaand formulier in of gebruik de contactgegevens.</p>
     </div>
+  </header>
 
-    <div class="row g-4">
-      <div class="col-lg-7">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h2 class="h6 mb-3">Contactformulier</h2>
-
+  <main class="container">
+    <div class="content-grid">
+      <div>
+        <section class="section-modern">
+          <div class="modern-card">
+            <h2 class="h5 mb-4">Contactformulier</h2>
             <form id="contactForm" novalidate>
               <div class="mb-3">
                 <label for="name" class="form-label">Naam</label>
@@ -93,44 +79,50 @@
               </div>
             </form>
           </div>
-        </div>
+        </section>
       </div>
 
-      <aside class="col-lg-5">
-        <div class="card shadow-sm mb-3">
-          <div class="card-body text-center">
-            <h3 class="h6 text-primary">Direct contact</h3>
-            <p class="mb-1"><strong>E-mail</strong>: <a href="mailto:werkZoeken@gmail.com">werkZoeken@gmail.com</a></p>
-            <p class="mb-1"><strong>Telefoon</strong>: +31 6 1215 1987</p>
-            <p class="mb-0"><strong>Openingstijden</strong>: Ma-Vr 09:00 - 17:00</p>
-          </div>
+      <aside class="sidebar-modern">
+        <div class="modern-card mb-3">
+          <h3 class="h6 mb-3">Direct contact</h3>
+          <p class="mb-2"><strong>E-mail</strong></p>
+          <p class="mb-3"><a href="mailto:werkZoeken@gmail.com">werkZoeken@gmail.com</a></p>
+          <p class="mb-2"><strong>Telefoon</strong></p>
+          <p class="mb-3">+31 6 1215 1987</p>
+          <p class="mb-2"><strong>Openingstijden</strong></p>
+          <p class="mb-0">Ma-Vr 09:00 - 17:00</p>
         </div>
 
-        <div class="card shadow-sm">
-          <div class="card-body text-center">
-            <h3 class="h6 text-primary">Bezoekadres</h3>
-            <p class="mb-2">Brasserskade 1, 2612 CA Delft</p>
-            <img src="assets/map.jpg" class="img-fluid rounded" alt="Locatie op kaart" />
-          </div>
+        <div class="modern-card">
+          <h3 class="h6 mb-3">Bezoekadres</h3>
+          <p class="mb-3">Brasserskade 1, 2612 CA Delft</p>
+          <img src="assets/map.jpg" class="img-fluid rounded" alt="Locatie op kaart" />
         </div>
       </aside>
     </div>
 
-    <div class="text-center mt-4">
+    <div class="text-center mt-4 mb-5">
       <a href="index.html" class="btn btn-outline-primary">Terug naar Home</a>
     </div>
   </main>
 
-  <footer class="bg-light py-4 mt-auto border-top">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
-      <div class="text-muted">&copy; 2025 Werk & Burgerschap</div>
-      <div>
-        <a href="arbeidsRechtenPlichten.html">Arbeidsrechten</a>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="fw-bold mb-2">© 2025 Werk & Burgerschap</div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="arbeidsRechtenPlichten.html" class="text-decoration-none small">Arbeidsrechten</a>
+        </div>
       </div>
     </div>
   </footer>
-<script src="assets/main.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="assets/main.js"></script>
 </body>
 
 </html>
